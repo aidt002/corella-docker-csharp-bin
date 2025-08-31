@@ -1,26 +1,39 @@
-# 1. Ignore everything by default
-**
+# Dependencies
+node_modules/
+.venv/
+venv/
 
-!MySolution.sln
-!**/*.sln
-!**/*.csproj
-!src/**/*.cs
-!test/**/*.cs
+# Build artifacts  
+dist/
+build/
+*.pyc
+*.pyo
+__pycache__/
+*.class
+*.o
+*.so
+*.dll
+*.exe
 
-# 4. Preserve the folder structure so those files can actually be sent
-!src/
-!test/
-!./run_tests.sh
+# Version control
+.git/
+.svn/
+.hg/
 
-# 5. Now re-ignore build outputs and other non-source cruft
-src/**/bin/
-src/**/obj/
-test/**/bin/
-test/**/obj/
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
 
-# (Optional) if you have any other generated/non-source files you know you never need,
-# just add similar patterns here, e.g.:
-# *.user
-# *.suo
-# logs/
-# temp/
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Environment files
+.env
+.env.local
